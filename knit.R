@@ -1,10 +1,6 @@
-# 
-setwd("/Users/akshay/OneDrive - Universitaet Bern/latch/enricment")
-args <- c("inputData.csv","rat","0.1")
-
 library(rmarkdown)
 
-#args <- commandArgs(trailingOnly=TRUE)
+args <- commandArgs(trailingOnly=TRUE)
 paramsValue=list(inputDir=args[1],
                  OrgDb = args[2],
                  threshold=as.numeric(args[3]))
